@@ -119,7 +119,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
             </SimpleGrid>
           </Container>
         </Box>
-      ) : null} */}
+      ) : null} */
 
       <Box bg="orange.400" width="100%">
         <Container maxW={'5xl'}>
