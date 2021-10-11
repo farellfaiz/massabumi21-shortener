@@ -19,7 +19,7 @@ export function LayoutAuth({ children, ...props }: ILayoutAuthProps) {
         <Box as="main" minH="90vh" width="100%" {...props}>
           {children}
         </Box>
-        <Footer withBacklink={false} />
+        <Footer />
       </Container>
     </AuthProvider>
   )
