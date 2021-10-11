@@ -26,7 +26,7 @@ export function Footer({ withBacklink }: IFooterProps) {
   const boxColor = useColorModeValue('gray.700', 'gray.200')
 
   return (
-    <Box color={boxColor} as="footer" width="100%">
+    {/* <Box color={boxColor} as="footer" width="100%">
       {withBacklink ? (
         <svg
           className="waves"
@@ -119,7 +119,7 @@ export function Footer({ withBacklink }: IFooterProps) {
               </Stack>
             </SimpleGrid>
           </Container>
-        </Box>
+        </Box> */}
       ) : null}
 
       <Box bg="orange.400" width="100%">
@@ -136,16 +136,16 @@ export function Footer({ withBacklink }: IFooterProps) {
             <Text>
               © 2021{' '}
               <Link href={'/'} textDecoration="underline">
-                {BRAND}
+                Massa Bumi 2021. 
               </Link>{' '}
-              dibuat oleh{' '}
+              Based on {' '}
               <Link
                 textDecoration="underline"
-                href={'https://mazipan.space/'}
+                href={'https://ksana.in/'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Irfan Maulana
+                Ksana.in.
               </Link>
             </Text>
           </Flex>
