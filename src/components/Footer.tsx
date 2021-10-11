@@ -121,7 +121,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
         </Box>
       ) : null} */
 
-      <Box bg="gray.400" width="100%">
+      <Box bg="gray.800" width="100%">
         <Container maxW={'5xl'}>
           <Flex
             as={Stack}
@@ -132,7 +132,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
             justify={{ md: 'space-between' }}
             align={{ md: 'center' }}
           >
-            <Text>
+            <Text color="white">
               © 2021{' '}
               <Link href={'/'} textDecoration="underline">
                 Massa Bumi 2021. 

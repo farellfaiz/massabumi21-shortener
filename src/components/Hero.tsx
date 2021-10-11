@@ -18,7 +18,7 @@ export function Hero() {
   const textColor = useColorModeValue('gray.500', 'gray.300')
 
   return (
-    <Box w={'full'}>
+    <Box w={'full'} marginBotton={5}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Container maxW={'6xl'} as="section" mt="32">
           <VStack spacing={{ base: 8, md: 10 }} px={{ base: 8, md: 10 }}>
@@ -55,7 +55,7 @@ export function Hero() {
               rounded="full"
               px={6}
               color={'white'}
-              bg="gray.400"
+              bg="gray.800"
               _hover={{
                 bg: 'gray.500'
               }}
