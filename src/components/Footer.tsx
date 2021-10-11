@@ -3,7 +3,6 @@ import {
   Container,
   Flex,
   Stack,
-  SimpleGrid,
   Text,
   Link,
   useColorModeValue
