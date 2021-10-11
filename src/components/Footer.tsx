@@ -21,7 +21,7 @@ export interface IFooterProps {
   withBacklink: boolean
 }
 
-export function Footer/* ({ withBacklink }: IFooterProps) */ {
+export function Footer(/* { withBacklink }: IFooterProps */) {
   const boxColor = useColorModeValue('gray.700', 'gray.200')
 
   return (
