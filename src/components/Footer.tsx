@@ -25,7 +25,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
   /* const boxColor = useColorModeValue('gray.700', 'gray.200') */
 
   return (
-    {/* <Box color={boxColor} as="footer" width="100%">
+    /* <Box color={boxColor} as="footer" width="100%">
       {withBacklink ? (
         <svg
           className="waves"
