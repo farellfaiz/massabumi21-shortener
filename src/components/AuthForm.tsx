@@ -188,7 +188,7 @@ export function AuthForm({ state }: IAuthFormProps) {
           fontWeight={700}
           fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
           lineHeight={'110%'}
-          color="orange.400"
+          color="gray.400"
         >
           {isLogin ? 'Masuk ke akunmu' : 'Daftarkan akun baru'}
         </Heading>
@@ -282,7 +282,7 @@ export function AuthForm({ state }: IAuthFormProps) {
                 align={'start'}
                 justify={'space-between'}
               >
-                <Button variant="link" as={Link} color={'orange.400'} href={forgetPasword}>
+                <Button variant="link" as={Link} color={'gray.400'} href={forgetPasword}>
                   Lupa password?
                 </Button>
               </Stack>
@@ -292,9 +292,9 @@ export function AuthForm({ state }: IAuthFormProps) {
               isLoading={loading}
               loadingText="Memproses"
               w="full"
-              bg="orange.400"
+              bg="gray.400"
               _hover={{
-                bg: 'orange.500'
+                bg: 'gray.500'
               }}
               color="white"
               onClick={handleSubmit}
@@ -306,14 +306,14 @@ export function AuthForm({ state }: IAuthFormProps) {
           {isLogin ? (
             <Stack direction="row" align={'center'} justify={'center'}>
               <Text>Belum punya akun? </Text>
-              <Button variant="link" as={Link} color={'orange.400'} onClick={toggleState}>
+              <Button variant="link" as={Link} color={'gray.400'} onClick={toggleState}>
                 Daftar sekarang
               </Button>
             </Stack>
           ) : (
             <Stack direction="row" align={'center'} justify={'center'}>
               <Text>Sudah punya akun? </Text>
-              <Button variant="link" as={Link} color={'orange.400'} onClick={toggleState}>
+              <Button variant="link" as={Link} color={'gray.400'} onClick={toggleState}>
                 Masuk
               </Button>
             </Stack>

@@ -69,7 +69,7 @@ export function Header() {
       p="4"
       as="header"
       zIndex="3"
-      bg="orange.400"
+      bg="gray.400"
     >
       <Link
         href={'/'}

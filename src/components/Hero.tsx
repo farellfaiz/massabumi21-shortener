@@ -30,11 +30,11 @@ export function Hero() {
               lineHeight={'110%'}
             >
               Pemendek tautan yang{' '}
-              <Text color="orange.400" as="span">
+              <Text color="gray.400" as="span">
                 mudah
               </Text>{' '}
               dan{' '}
-              <Text color="orange.400" as="span">
+              <Text color="gray.400" as="span">
                 gratis
               </Text>
             </Heading>
@@ -55,9 +55,9 @@ export function Hero() {
               rounded="full"
               px={6}
               color={'white'}
-              bg="orange.400"
+              bg="gray.400"
               _hover={{
-                bg: 'orange.500'
+                bg: 'gray.500'
               }}
               as={'a'}
               href={login}

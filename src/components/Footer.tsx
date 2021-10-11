@@ -54,7 +54,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
           <Container maxW={'5xl'}>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} py={4}>
               <Stack align={'flex-start'}>
-                <Text fontWeight="700" color="orange.400" fontSize={'lg'} mb={2}>
+                <Text fontWeight="700" color="gray.400" fontSize={'lg'} mb={2}>
                   Lebih banyak
                 </Text>
                 <Link href={tentang}>Tentang Ksana.in</Link>
@@ -63,7 +63,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
               </Stack>
 
               <Stack align={'flex-start'}>
-                <Text fontWeight="700" color="orange.400" fontSize={'lg'} mb={2}>
+                <Text fontWeight="700" color="gray.400" fontSize={'lg'} mb={2}>
                   Kebijakan
                 </Text>
                 <Link href={kebijakanPrivasi}>Kebijakan Privasi</Link>
@@ -71,7 +71,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
               </Stack>
 
               <Stack align={'flex-start'}>
-                <Text fontWeight="700" color="orange.400" fontSize={'lg'} mb={2}>
+                <Text fontWeight="700" color="gray.400" fontSize={'lg'} mb={2}>
                   Sumber daya
                 </Text>
                 <Link
@@ -95,7 +95,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
               </Stack>
 
               <Stack align={'flex-start'}>
-                <Text fontWeight="700" color="orange.400" fontSize={'lg'} mb={2}>
+                <Text fontWeight="700" color="gray.400" fontSize={'lg'} mb={2}>
                   Karya lain
                 </Text>
 
@@ -121,7 +121,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
         </Box>
       ) : null} */
 
-      <Box bg="orange.400" width="100%">
+      <Box bg="gray.400" width="100%">
         <Container maxW={'5xl'}>
           <Flex
             as={Stack}

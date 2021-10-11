@@ -10,9 +10,9 @@ interface IBlogCardProps {
 
 export function BlogCardPost({ post }: IBlogCardProps) {
   return (
-    <Box maxW="sm" borderWidth="2px" borderRadius="lg" overflow="hidden" borderColor="orange.400">
+    <Box maxW="sm" borderWidth="2px" borderRadius="lg" overflow="hidden" borderColor="gray.400">
       <Box p="4" as="a" display="block" href={`/blog/${post.slug}`}>
-        <Heading as="h3" mb="2" size="md" color="orange.400" fontFamily="body">
+        <Heading as="h3" mb="2" size="md" color="gray.400" fontFamily="body">
           {post.title}
         </Heading>
         <Button leftIcon={<HiClock />} colorScheme="gray" variant="solid" size="xs">

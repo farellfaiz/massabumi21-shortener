@@ -27,7 +27,7 @@ export default function BlogIndex({ data }: IBlogProps) {
             fontWeight={700}
             fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
             lineHeight={'110%'}
-            color="orange.400"
+            color="gray.400"
           >
             Blog Ksana.in
           </Heading>

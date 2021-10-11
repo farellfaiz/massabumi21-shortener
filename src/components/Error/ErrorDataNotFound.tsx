@@ -35,9 +35,9 @@ export function ErrorDataNotFound({ title, useCta, ctaAction, ctaText }: IErrorD
               px={6}
               size="lg"
               color={'white'}
-              bg="orange.400"
+              bg="gray.400"
               _hover={{
-                bg: 'orange.500'
+                bg: 'gray.500'
               }}
               onClick={ctaAction}
             >

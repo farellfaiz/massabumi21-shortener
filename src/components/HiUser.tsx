@@ -19,7 +19,7 @@ export function HiUser({ user }: IHiUserProps) {
           textAlign="center"
         >
           Selamat datang,{' '}
-          <Text color="orange.400" fontSize={{ base: 'lg', md: 'xl' }}>
+          <Text color="gray.400" fontSize={{ base: 'lg', md: 'xl' }}>
             {user ? user.email.split('@')[0] : ''}
           </Text>
         </Heading>
@@ -36,9 +36,9 @@ export function HiUser({ user }: IHiUserProps) {
           px={6}
           size="lg"
           color={'white'}
-          bg="orange.400"
+          bg="gray.400"
           _hover={{
-            bg: 'orange.500'
+            bg: 'gray.500'
           }}
           as={'a'}
           href={'/dashboard'}

@@ -148,7 +148,7 @@ export function UrlForm({ user, onSuccess }: IUrlFormProps) {
         <FormControl id="slug" isRequired>
           <InputGroup size="lg">
             <InputLeftAddon
-              color={'orange.400'}
+              color={'gray.400'}
               fontWeight="bold"
               px={2}
               children={HOME?.replace('https://', '').replace('http://', '')}
@@ -198,12 +198,12 @@ export function UrlForm({ user, onSuccess }: IUrlFormProps) {
             px={6}
             my="4"
             color={'white'}
-            bg={'orange.400'}
+            bg={'gray.400'}
             _hover={{
-              bg: 'orange.500'
+              bg: 'gray.500'
             }}
             _focus={{
-              bg: 'orange.500'
+              bg: 'gray.500'
             }}
             onClick={handleCheckAvailability}
           >

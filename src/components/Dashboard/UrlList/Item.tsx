@@ -164,7 +164,7 @@ export function Item({ user, data }: IUrlItemProps) {
         as="a"
         fontSize={{ base: 'md', md: 'lg' }}
         fontWeight="700"
-        color="orange.400"
+        color="gray.400"
         href={`${HOME}${data.slug}`}
         mb="4"
         display="block"
@@ -188,7 +188,7 @@ export function Item({ user, data }: IUrlItemProps) {
             onClick={handleClickSave}
             aria-label="Simpan slug"
             size="lg"
-            bg="orange.400"
+            bg="gray.400"
             borderRadius="md"
             isLoading={isLoadingSave}
             icon={<HiSave color="#FFF" />}
@@ -200,7 +200,7 @@ export function Item({ user, data }: IUrlItemProps) {
         {data.real_url}
       </Text>
       <Text fontSize="small" color="gray.400">
-        <Text as="span" fontWeight="bold" color="orange.400">
+        <Text as="span" fontWeight="bold" color="gray.400">
           {new Intl.NumberFormat('id-ID').format(data.hit)}
         </Text>
         {` `} kunjungan

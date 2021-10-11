@@ -99,7 +99,7 @@ export function Form() {
   return (
     <Stack spacing={8} mx={'auto'} mt="20" maxW={'lg'} py={12} px={6}>
       <Stack align={'center'}>
-        <Heading fontSize={'4xl'} color="orange.400">
+        <Heading fontSize={'4xl'} color="gray.400">
           Setel ulang password
         </Heading>
       </Stack>
@@ -135,9 +135,9 @@ export function Form() {
               isLoading={loading}
               loadingText="Memproses"
               w="full"
-              bg="orange.400"
+              bg="gray.400"
               _hover={{
-                bg: 'orange.500'
+                bg: 'gray.500'
               }}
               onClick={handleSubmit}
             >
