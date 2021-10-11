@@ -10,7 +10,7 @@ export const INDEXED = 'index,follow'
 export const NO_INDEXED = 'noindex,nofollow'
 
 export function MetaHead({
-  title = `${BRAND_TAGLINE} | ${BRAND}`,
+  title = `${BRAND_TAGLINE}`,
   description = BRAND_TAGLINE_LONG,
   url = HOME,
   image = `${HOME}${META_IMAGE}`,
