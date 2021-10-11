@@ -26,7 +26,7 @@ function Privacy() {
           >
             Kebijakan Privasi
           </Heading>
-          <Image width={200} height={122} src={'/images/orange/ksana.svg'} alt="Ksana.in" />
+          <Image width={200} height={122} src={'/images/orange/ksana.png'} alt="Ksana.in" />
         </VStack>
 
         <Container maxW={'4xl'} mx="auto" as="section">
@@ -236,7 +236,7 @@ function Privacy() {
             <Text color={textColor} mt="8">
               Terakhir diperbarui pada{' '}
               <Text color="orange.400" as="span">
-                29 Mei 2021
+                11 Oktober 2021
               </Text>
             </Text>
           </VStack>

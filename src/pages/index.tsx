@@ -11,9 +11,9 @@ function Homepage() {
     <Layout>
       <MetaHead />
       <Hero />
-      <Features />
+      {/* <Features />
       <CounterUrls />
-      <CounterUsers />
+      <CounterUsers /> */}
     </Layout>
   )
 }
