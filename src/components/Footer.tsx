@@ -8,7 +8,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 
-import {
+/* import {
   login,
   tentang,
   blog,
@@ -16,7 +16,7 @@ import {
   kebijakanPrivasi,
   splitbeeAnalytics
 } from 'constants/paths'
-import { BRAND } from 'constants/texts'
+import { BRAND } from 'constants/texts' */
 export interface IFooterProps {
   withBacklink: boolean
 }
