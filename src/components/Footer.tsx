@@ -5,7 +5,7 @@ import {
   Stack,
   Text,
   Link,
-  useColorModeValue
+  /* useColorModeValue */
 } from '@chakra-ui/react'
 
 /* import {
@@ -17,12 +17,12 @@ import {
   splitbeeAnalytics
 } from 'constants/paths'
 import { BRAND } from 'constants/texts' */
-export interface IFooterProps {
+/* export interface IFooterProps {
   withBacklink: boolean
-}
+} */
 
 export function Footer(/* { withBacklink }: IFooterProps */) {
-  const boxColor = useColorModeValue('gray.700', 'gray.200')
+  /* const boxColor = useColorModeValue('gray.700', 'gray.200') */
 
   return (
     {/* <Box color={boxColor} as="footer" width="100%">
@@ -118,8 +118,8 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
               </Stack>
             </SimpleGrid>
           </Container>
-        </Box> */}
-      ) : null}
+        </Box>
+      ) : null} */}
 
       <Box bg="orange.400" width="100%">
         <Container maxW={'5xl'}>
@@ -150,6 +150,6 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
           </Flex>
         </Container>
       </Box>
-    </Box>
+    /* </Box> */
   )
 }
