@@ -1,6 +1,6 @@
 import { Button, Link, Flex } from '@chakra-ui/react'
 
-import { HiLogout } from 'react-icons/hi'
+import { HiOutlineLogout } from 'react-icons/hi'
 
 import { useAuthContext } from 'context/Auth'
 /* import { DarkModeSwitch } from '../DarkModeSwitch' */
