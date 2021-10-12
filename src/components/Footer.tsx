@@ -131,10 +131,10 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
           >
             <Text color="white">
               © 2021{' '}
-              <Link href={'/'} textDecoration="underline">
-                Massa Bumi 2021. 
+              <Link href='https://massabumi21.id/' textDecoration="underline">
+                Massa Bumi 2021
               </Link>{' '}
-              Based on {' '}
+              | Based on {' '}
               <Link
                 textDecoration="underline"
                 href={'https://ksana.in/'}

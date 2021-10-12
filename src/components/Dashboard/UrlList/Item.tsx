@@ -6,7 +6,7 @@ import { HiDuplicate, HiPencil, HiTrash, HiSave, HiCheck } from 'react-icons/hi'
 
 import { deleteUrl, patchSlug } from 'libs/supabase'
 import { sanitizeSlug } from 'libs/helpers'
-import { getMeta } from 'libs/oge'
+/* import { getMeta } from 'libs/oge' */
 
 import { useAlertContext } from 'context/Alert'
 
