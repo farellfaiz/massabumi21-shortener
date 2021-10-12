@@ -12,14 +12,20 @@ import {
 /* import { HiPlay } from 'react-icons/hi' */
 
 /* import { login } from 'constants/paths' */
-import  { Redirect } from 'react-router-dom'
+import React, { useEffect } from "react";
+import Router from 'next/router'
 
 export function Hero() {
   /* const textColor = useColorModeValue('gray.500', 'gray.300') */
+  useEffect(() => {
+    const {pathname} = Router
+    if(pathname == '/' ){
+        Router.push('/auth/sign-in')
+    }
+  });
 
   return (
     <Box w={'full'} marginBottom={5}>
-      <Redirect to='/auth/sign-in'  />
       
       {/* <SimpleGrid columns={{ base: 1, md: 1 }} spacing={10}>
         <Container maxW={'6xl'} as="section" mt="32">
