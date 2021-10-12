@@ -78,7 +78,7 @@ export function Header() {
           textDecoration: 'none'
         }}
       >
-        <Image src="/images/orange/ksana.png" alt="Home" w="60px" h="60px">
+        <Image src="/images/orange/ksana.png" alt="Home" w="60px" h="60px" />
       </Link>
 
       <Flex justifyContent="space-between" alignItems="center">
