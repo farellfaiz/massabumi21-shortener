@@ -28,7 +28,8 @@ export function Hero() {
               fontSize={{ base: '4xl', sm: '5xl', md: '6xl' }}
               lineHeight={'110%'}
             >
-              Massa Bumi 2021<br />URL Shortener
+              <Text>
+              Massa Bumi 2021 URL Shortener
               </Text>
             </Heading>
 
