@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* import Image from 'next/image' */
 import {
   Container,
   Heading,
@@ -6,7 +6,6 @@ import {
   Button,
   SimpleGrid,
   Box,
-  Flex,
   VStack,
   useColorModeValue
 } from '@chakra-ui/react'
