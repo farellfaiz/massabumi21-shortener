@@ -7,7 +7,7 @@ import {
   SimpleGrid, */
   Box,
   /* VStack, */
-  useColorModeValue
+  /* useColorModeValue */
 } from '@chakra-ui/react'
 /* import { HiPlay } from 'react-icons/hi' */
 
