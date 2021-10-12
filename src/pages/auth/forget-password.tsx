@@ -10,7 +10,7 @@ function ForgetPasswordPage() {
   return (
     <LayoutAuth minH={'100vh'} bg={bgColor}>
       <MetaHead
-        title="Lupa Password | Ksana.in"
+        title="Lupa Password | Massa Bumi 2021 Shortener"
         description="Apakah Anda lupa dengan password untuk masuk ke Ksana.in? Tenang, masih bisa di reset dengan mudah. Tidak sampai 1 menit selesai."
       />
       <AuthForgetPassword />

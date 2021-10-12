@@ -10,7 +10,7 @@ function Login() {
   return (
     <LayoutAuth minH={'100vh'} bg={bgColor}>
       <MetaHead
-        title="Masuk/Login | Ksana.in"
+        title="Masuk/Login | Massa Bumi 2021 Shortener"
         description="Sudah punya Akun di Ksana.in? Yuk login dan gunakan layanan dari Ksana.in untuk membantu memepercantik tautan Anda sekarang juga."
       />
       <AuthSignIn />
