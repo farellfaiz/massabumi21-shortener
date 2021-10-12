@@ -19,7 +19,7 @@ export function Hero() {
   /* const textColor = useColorModeValue('gray.500', 'gray.300') */
   useEffect(() => {
     const {pathname} = Router
-    if(pathname == '/' ){
+    if(pathname === '/' ){
         Router.push('/auth/sign-in')
     }
   });
