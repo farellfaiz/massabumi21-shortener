@@ -15,7 +15,7 @@ import {
 import  { Redirect } from 'react-router-dom'
 
 export function Hero() {
-  const textColor = useColorModeValue('gray.500', 'gray.300')
+  /* const textColor = useColorModeValue('gray.500', 'gray.300') */
 
   return (
     <Box w={'full'} marginBottom={5}>
