@@ -121,7 +121,7 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
         </Box>
       ) : null} */
 
-      <Box bg="gray.800" width="100%">
+      <Box bg="gray.800" width="100%" marginTop="15px">
         <Container maxW={'5xl'}>
           <Flex
             as={Stack}

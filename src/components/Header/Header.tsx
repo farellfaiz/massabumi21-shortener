@@ -98,7 +98,7 @@ export function Header() {
             Install
           </Button>
         ) : null}
-        <DarkModeSwitch />
+        {/* <DarkModeSwitch /> */}
       </Flex>
     </Flex>
   )

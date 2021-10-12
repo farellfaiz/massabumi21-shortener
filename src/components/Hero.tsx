@@ -18,8 +18,8 @@ export function Hero() {
   const textColor = useColorModeValue('gray.500', 'gray.300')
 
   return (
-    <Box w={'full'} marginBotton={5}>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+    <Box w={'full'} marginBottom={5}>
+      <SimpleGrid columns={{ base: 1, md: 1 }} spacing={10}>
         <Container maxW={'6xl'} as="section" mt="32">
           <VStack spacing={{ base: 8, md: 10 }} px={{ base: 8, md: 10 }}>
             <Heading
@@ -29,13 +29,7 @@ export function Hero() {
               fontSize={{ base: '4xl', sm: '5xl', md: '6xl' }}
               lineHeight={'110%'}
             >
-              Pemendek tautan yang{' '}
-              <Text color="gray.400" as="span">
-                mudah
-              </Text>{' '}
-              dan{' '}
-              <Text color="gray.400" as="span">
-                gratis
+              Massa Bumi 2021<br />URL Shortener
               </Text>
             </Heading>
 
@@ -46,8 +40,7 @@ export function Hero() {
               fontSize={{ base: 'lg', sm: 'xl', md: '2xl' }}
               lineHeight={'110%'}
             >
-              Percantik tautanmu, jadikan agar mudah diingat, bagikan ke orang lain dengan percaya
-              diri
+              URL Shortener based on Ksana.in
             </Text>
 
             <Button
@@ -68,7 +61,7 @@ export function Hero() {
           </VStack>
         </Container>
 
-        <Flex as="section" mt={{ base: 0, md: 20 }} justifyContent="center">
+        {/* <Flex as="section" mt={{ base: 0, md: 20 }} justifyContent="center">
           <Image
             width={400}
             height={400}
@@ -76,7 +69,7 @@ export function Hero() {
             alt="Women with Internet"
             priority={true}
           />
-        </Flex>
+        </Flex> */}
       </SimpleGrid>
     </Box>
   )
