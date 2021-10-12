@@ -1,6 +1,6 @@
 {
-  "short_name": "ksana.in",
-  "name": "ksana.in: Pemendek tautan yang mudah dan gratis",
+  "short_name": "URL | Massa Bumi 2021",
+  "name": "URL Shortener | Massa Bumi 2021",
   "icons": [
     {
       "src": "/images/maskable/ksana-192x192.png",
@@ -16,11 +16,11 @@
     }
   ],
   "start_url": "/?source=pwa",
-  "background_color": "#ED8936",
+  "background_color": "#2D3748",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#ED8936",
-  "description": "Pemendek tautan yang mudah dan gratis",
+  "theme_color": "#2D3748",
+  "description": "URL Shortener | Massa Bumi 2021",
   "screenshots": [
     {
       "src": "/images/screen/home.png",
