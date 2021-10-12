@@ -164,7 +164,7 @@ export function Item({ user, data }: IUrlItemProps) {
         as="a"
         fontSize={{ base: 'md', md: 'lg' }}
         fontWeight="700"
-        color="gray.400"
+        color="gray.700"
         href={`${HOME}${data.slug}`}
         mb="4"
         display="block"
@@ -196,7 +196,7 @@ export function Item({ user, data }: IUrlItemProps) {
         </HStack>
       )}
 
-      <Text fontSize="small" color="gray.700" display="block" mb="2">
+      <Text fontSize="small" color="gray.500" display="block" mb="2">
         {data.real_url}
       </Text>
       <Text fontSize="small" color="gray.400">
