@@ -12,7 +12,7 @@ import {
 /* import { HiPlay } from 'react-icons/hi' */
 
 /* import { login } from 'constants/paths' */
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Router from 'next/router'
 
 export function Hero() {
