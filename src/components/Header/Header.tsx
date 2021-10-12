@@ -1,9 +1,9 @@
 import { Link, Flex, Button, Image } from '@chakra-ui/react'
 import { useEffect, useRef, useState } from 'react'
-import { HiDownload } from 'react-icons/hi'
+import { HiDownload, HiOutlineLogin } from 'react-icons/hi'
 
 import { sendEvent } from 'libs/splitbee'
-import { DarkModeSwitch } from '../DarkModeSwitch'
+/* import { DarkModeSwitch } from '../DarkModeSwitch' */
 
 interface UserChoice {
   outcome: 'accepted' | 'dismissed'
@@ -69,7 +69,7 @@ export function Header() {
       p="4"
       as="header"
       zIndex="3"
-      bg="gray.800"
+      bg="gray.700"
     >
       <Link
         href={'/'}
@@ -98,6 +98,18 @@ export function Header() {
             Install
           </Button>
         ) : null}
+          <Button
+            px={6}
+            color={'white'}
+            bg="gray.600"
+            _hover={{
+              bg: 'gray.500'
+            }}
+            mr="2"
+            leftIcon={<HiOutlineLogin />}
+          >
+            Login
+          </Button>
         {/* <DarkModeSwitch /> */}
       </Flex>
     </Flex>

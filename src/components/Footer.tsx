@@ -121,16 +121,14 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
         </Box>
       ) : null} */
 
-      <Box bg="gray.800" width="100%" marginTop="15px">
+      <Box bg="gray.700" width="100%" marginTop="15px">
         <Container maxW={'5xl'}>
           <Flex
-            as={Stack}
             py={4}
             alignItems="center"
-            direction={{ base: 'column', md: 'row' }}
             spacing={4}
-            justify={{ md: 'space-between' }}
-            align={{ md: 'center' }}
+            justify="center"
+            align="center"
           >
             <Text color="white">
               © 2021{' '}

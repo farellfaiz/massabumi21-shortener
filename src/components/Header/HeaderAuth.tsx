@@ -3,7 +3,7 @@ import { Button, Link, Flex } from '@chakra-ui/react'
 import { HiLogout } from 'react-icons/hi'
 
 import { useAuthContext } from 'context/Auth'
-import { DarkModeSwitch } from '../DarkModeSwitch'
+/* import { DarkModeSwitch } from '../DarkModeSwitch' */
 
 import { handleLogout } from 'libs/supabase'
 
@@ -21,7 +21,7 @@ export function Header() {
       p="4"
       as="header"
       zIndex="3"
-      bg="gray.800"
+      bg="gray.700"
     >
       <Link
         href={'/'}
@@ -44,7 +44,7 @@ export function Header() {
             }}
             mr="2"
             onClick={handleLogout}
-            leftIcon={<HiLogout />}
+            leftIcon={<HiOutlineLogout />}
           >
             Keluar
           </Button>
