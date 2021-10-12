@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import { ChangeEvent, useState } from 'react'
 import { mutate } from 'swr'
 import { Link, Text, Box, Input, IconButton, useColorModeValue, HStack } from '@chakra-ui/react'
-import { HiShare, HiDuplicate, HiPencil, HiTrash, HiSave, HiCheck } from 'react-icons/hi'
+import { HiDuplicate, HiPencil, HiTrash, HiSave, HiCheck } from 'react-icons/hi'
 
 import { deleteUrl, patchSlug } from 'libs/supabase'
 import { sanitizeSlug } from 'libs/helpers'
@@ -15,7 +15,7 @@ import { HOME, apiUrlsGet } from 'constants/paths'
 import { IUser } from 'interfaces/IUser'
 import { IUrl } from 'interfaces/IUrl'
 
-import SharePopover from './SharePopover'
+/* import SharePopover from './SharePopover' */
 
 const copy: any = dynamic((): any => import('copy-to-clipboard'), { ssr: false })
 
@@ -29,10 +29,10 @@ export function Item({ user, data }: IUrlItemProps) {
   const [updateId, setUpdateId] = useState<string>('')
   const [updateSlug, setUpdateSlug] = useState<string>('')
   const [isSuccessCopy, setSuccessCopy] = useState<boolean>(false)
-  const [isLoadingShare, setLoadingShare] = useState<boolean>(false)
+  /* const [isLoadingShare, setLoadingShare] = useState<boolean>(false) */
   const [isLoadingSave, setLoadingSave] = useState<boolean>(false)
-  const isSupportShare: boolean =
-    typeof window !== 'undefined' ? navigator.share !== undefined : false
+  /* const isSupportShare: boolean =
+    typeof window !== 'undefined' ? navigator.share !== undefined : false */
 
   const bgBox = useColorModeValue('white', 'gray.800')
   const bgInput = useColorModeValue('blackAlpha.100', 'whiteAlpha.100')
@@ -53,7 +53,7 @@ export function Item({ user, data }: IUrlItemProps) {
     showSuccessCopy()
   }
 
-  const handleShare = async (url: string) => {
+  /* const handleShare = async (url: string) => {
     if (navigator.share) {
       setLoadingShare(true)
       const jsonRes = await getMeta(url)
@@ -74,7 +74,7 @@ export function Item({ user, data }: IUrlItemProps) {
           console.error('Error sharing', error, shareObj)
         })
     }
-  }
+  } */
 
   const handleClickEdit = async (id: string) => {
     if (updateId === id) {
@@ -215,12 +215,12 @@ export function Item({ user, data }: IUrlItemProps) {
           borderRadius="md"
           icon={isSuccessCopy ? <HiCheck color="#48BB78" /> : <HiDuplicate color="#2D3748" />}
         />
-        {isSupportShare ? (
+        {/* {isSupportShare ? (
           <IconButton
             onClick={() => {
               handleShare(`${HOME}${data.slug}`)
             }}
-            aria-label="Copy"
+            aria-label="Share"
             variant="ghost"
             borderRadius="md"
             isLoading={isLoadingShare}
@@ -228,7 +228,7 @@ export function Item({ user, data }: IUrlItemProps) {
           />
         ) : (
           <SharePopover url={`${HOME}${data.slug}`} />
-        )}
+        )} */}
         <IconButton
           onClick={() => {
             handleClickEdit(data.id)

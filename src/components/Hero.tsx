@@ -6,6 +6,7 @@ import {
   Button,
   SimpleGrid, */
   Box,
+  Spinner,
   /* VStack, */
   /* useColorModeValue */
 } from '@chakra-ui/react'
@@ -25,8 +26,8 @@ export function Hero() {
   });
 
   return (
-    <Box w={'full'} marginBottom={5}>
-      
+    <Box w={'full'} marginBottom={5} display="flex" alignItems="center" justifyContent="center">
+      <Spinner size="xl" />
       {/* <SimpleGrid columns={{ base: 1, md: 1 }} spacing={10}>
         <Container maxW={'6xl'} as="section" mt="32">
           <VStack spacing={{ base: 8, md: 10 }} px={{ base: 8, md: 10 }}>
