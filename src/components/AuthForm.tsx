@@ -103,7 +103,7 @@ export function AuthForm({ state }: IAuthFormProps) {
     setLoading(false)
   }
 
-  const handleLoginGoogle = async () => {
+ /*  const handleLoginGoogle = async () => {
     setLoading(true)
     await loginWithGoogle()
     setLoading(false)
@@ -119,7 +119,7 @@ export function AuthForm({ state }: IAuthFormProps) {
     setLoading(true)
     await loginWithTwitter()
     setLoading(false)
-  }
+  } */
 
   const processResponse = async ({ session, error, stateType = 'login' }: IProcessResponse) => {
     if (error) {
@@ -137,8 +137,8 @@ export function AuthForm({ state }: IAuthFormProps) {
         title: `${stateType === 'login' ? 'Login' : 'Register'} success`,
         message: `${
           stateType === 'login'
-            ? 'Selamat datang kembali!'
-            : 'Terima kasih telah mendaftar. Silahkan melakukan verifikasi dengan mengklik tautan yang kami kirimkan melalui email.'
+            ? 'Selamat datang!'
+            : 'Terima kasih telah mendaftar. Silahkan melakukan verifikasi dengan menekan tautan yang kami kirimkan melalui email.'
         }`,
         onClose: () => {
           hideAlert()
