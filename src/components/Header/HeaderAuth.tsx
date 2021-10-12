@@ -1,4 +1,4 @@
-import { Button, Link, Flex } from '@chakra-ui/react'
+import { Button, Link, Flex, Image } from '@chakra-ui/react'
 
 import { HiOutlineLogout } from 'react-icons/hi'
 
