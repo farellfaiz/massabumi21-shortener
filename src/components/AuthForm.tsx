@@ -19,9 +19,9 @@ import { FcGoogle } from 'react-icons/fc' */
 
 import {
   setSessionToServer,
-  loginWithGoogle,
+  /* loginWithGoogle,
   loginWithGithub,
-  loginWithTwitter,
+  loginWithTwitter, */
   login,
   register
 } from 'libs/supabase'
