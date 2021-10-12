@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 /* import { HiPlay } from 'react-icons/hi' */
 
-import { login } from 'constants/paths'
+/* import { login } from 'constants/paths' */
 import  { Redirect } from 'react-router-dom'
 
 export function Hero() {
