@@ -70,16 +70,16 @@ export function Items({ user, isFormVisible, onShowForm }: IUrlListProps) {
             <ButtonGroup spacing="2" variant="outline">
               <IconButton
                 variant="outline"
-                borderColor={'gray.400'}
-                color="gray.400"
+                borderColor={'gray.700'}
+                color="gray.700"
                 _hover={{
-                  bg: 'gray.200'
+                  bg: 'gray.600'
                 }}
                 _focus={{
-                  bg: 'gray.200'
+                  bg: 'gray.600'
                 }}
                 _active={{
-                  bg: 'gray.400',
+                  bg: 'gray.700',
                   color: 'white'
                 }}
                 aria-label="View Grid"
@@ -89,16 +89,16 @@ export function Items({ user, isFormVisible, onShowForm }: IUrlListProps) {
               />
               <IconButton
                 variant="outline"
-                borderColor={'gray.400'}
-                color="gray.400"
+                borderColor={'gray.700'}
+                color="gray.700"
                 _hover={{
-                  bg: 'gray.200'
+                  bg: 'gray.600'
                 }}
                 _focus={{
-                  bg: 'gray.200'
+                  bg: 'gray.600'
                 }}
                 _active={{
-                  bg: 'gray.400',
+                  bg: 'gray.700',
                   color: 'white'
                 }}
                 aria-label="View List"

@@ -313,7 +313,7 @@ export function AuthForm({ state }: IAuthFormProps) {
           ) : (
             <Stack direction="row" align={'center'} justify={'center'}>
               <Text>Sudah punya akun? </Text>
-              <Button variant="link" as={Link} color={'gray.400'} onClick={toggleState}>
+              <Button variant="link" as={Link} color={'gray.700'} onClick={toggleState}>
                 Masuk
               </Button>
             </Stack>

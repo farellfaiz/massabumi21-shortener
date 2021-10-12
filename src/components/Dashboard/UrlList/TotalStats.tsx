@@ -28,13 +28,13 @@ export function TotalStats({ data }: ITotalStatsProps) {
             position="relative"
           >
             <Text fontSize="xs">Total Tautan</Text>
-            <Text fontSize="2xl" color="gray.400" fontWeight="700" zIndex="1">
+            <Text fontSize="2xl" color="gray.700" fontWeight="700" zIndex="1">
               {new Intl.NumberFormat('id-ID').format(data.length)}
             </Text>
 
             <IconButton
               aria-label="Tautan"
-              bg="gray.400"
+              bg="gray.600"
               color="white"
               borderRadius="3xl"
               position="absolute"
@@ -61,13 +61,13 @@ export function TotalStats({ data }: ITotalStatsProps) {
             position="relative"
           >
             <Text fontSize="xs">Total Kunjungan</Text>
-            <Text fontSize="2xl" color="gray.400" fontWeight="700" zIndex="1">
+            <Text fontSize="2xl" color="gray.700" fontWeight="700" zIndex="1">
               {new Intl.NumberFormat('id-ID').format(sum)}
             </Text>
 
             <IconButton
               aria-label="Tautan"
-              bg="gray.400"
+              bg="gray.600"
               color="white"
               borderRadius="3xl"
               position="absolute"

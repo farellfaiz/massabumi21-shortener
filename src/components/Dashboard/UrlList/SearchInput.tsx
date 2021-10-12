@@ -16,7 +16,7 @@ export function SearchInput({ searchText, onChangeSearch }: ISearchInputProps) {
           <Input
             size="lg"
             borderWidth="2px"
-            borderColor="gray.400"
+            borderColor="gray.700"
             name="searchText"
             placeholder="Cari tautan kamu"
             variant="filled"
@@ -25,7 +25,7 @@ export function SearchInput({ searchText, onChangeSearch }: ISearchInputProps) {
           />
           <InputRightElement
             fontSize="2em"
-            color="gray.400"
+            color="gray.600"
             mr="2"
             mt="1"
             children={<FiSearch />}

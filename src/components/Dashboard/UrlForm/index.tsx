@@ -198,12 +198,12 @@ export function UrlForm({ user, onSuccess }: IUrlFormProps) {
             px={6}
             my="4"
             color={'white'}
-            bg={'gray.400'}
+            bg={'gray.700'}
             _hover={{
-              bg: 'gray.500'
+              bg: 'gray.600'
             }}
             _focus={{
-              bg: 'gray.500'
+              bg: 'gray.700'
             }}
             onClick={handleCheckAvailability}
           >

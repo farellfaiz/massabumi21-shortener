@@ -196,7 +196,7 @@ export function Item({ user, data }: IUrlItemProps) {
         </HStack>
       )}
 
-      <Text fontSize="small" color="gray.400" display="block" mb="2">
+      <Text fontSize="small" color="gray.700" display="block" mb="2">
         {data.real_url}
       </Text>
       <Text fontSize="small" color="gray.400">
@@ -213,7 +213,7 @@ export function Item({ user, data }: IUrlItemProps) {
           aria-label="Copy"
           variant="ghost"
           borderRadius="md"
-          icon={isSuccessCopy ? <HiCheck color="#48BB78" /> : <HiDuplicate color="#ED8936" />}
+          icon={isSuccessCopy ? <HiCheck color="#48BB78" /> : <HiDuplicate color="#2D3748" />}
         />
         {isSupportShare ? (
           <IconButton
@@ -224,7 +224,7 @@ export function Item({ user, data }: IUrlItemProps) {
             variant="ghost"
             borderRadius="md"
             isLoading={isLoadingShare}
-            icon={<HiShare color="#ED8936" />}
+            icon={<HiShare color="#2D3748" />}
           />
         ) : (
           <SharePopover url={`${HOME}${data.slug}`} />
@@ -236,7 +236,7 @@ export function Item({ user, data }: IUrlItemProps) {
           aria-label="Ubah"
           variant="ghost"
           borderRadius="md"
-          icon={<HiPencil color="#ED8936" />}
+          icon={<HiPencil color="#2D3748" />}
         />
         <IconButton
           onClick={() => {
@@ -245,7 +245,7 @@ export function Item({ user, data }: IUrlItemProps) {
           aria-label="Hapus"
           variant="ghost"
           borderRadius="md"
-          icon={<HiTrash color="#ED8936" />}
+          icon={<HiTrash color="#2D3748" />}
         />
       </HStack>
     </Box>
