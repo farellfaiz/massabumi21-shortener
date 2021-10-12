@@ -1,24 +1,27 @@
 /* import Image from 'next/image' */
 import {
-  Container,
+ /*  Container,
   Heading,
   Text,
   Button,
-  SimpleGrid,
+  SimpleGrid, */
   Box,
-  VStack,
+  /* VStack, */
   useColorModeValue
 } from '@chakra-ui/react'
-import { HiPlay } from 'react-icons/hi'
+/* import { HiPlay } from 'react-icons/hi' */
 
 import { login } from 'constants/paths'
+import  { Redirect } from 'react-router-dom'
 
 export function Hero() {
   const textColor = useColorModeValue('gray.500', 'gray.300')
 
   return (
     <Box w={'full'} marginBottom={5}>
-      <SimpleGrid columns={{ base: 1, md: 1 }} spacing={10}>
+      <Redirect to='/auth/sign-in'  />
+      
+      {/* <SimpleGrid columns={{ base: 1, md: 1 }} spacing={10}>
         <Container maxW={'6xl'} as="section" mt="32">
           <VStack spacing={{ base: 8, md: 10 }} px={{ base: 8, md: 10 }}>
             <Heading
@@ -61,7 +64,7 @@ export function Hero() {
           </VStack>
         </Container>
 
-        {/* <Flex as="section" mt={{ base: 0, md: 20 }} justifyContent="center">
+        <Flex as="section" mt={{ base: 0, md: 20 }} justifyContent="center">
           <Image
             width={400}
             height={400}
@@ -69,8 +72,8 @@ export function Hero() {
             alt="Women with Internet"
             priority={true}
           />
-        </Flex> */}
-      </SimpleGrid>
+        </Flex>
+      </SimpleGrid> */}
     </Box>
   )
 }

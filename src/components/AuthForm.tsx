@@ -7,15 +7,15 @@ import {
   FormLabel,
   Input,
   Stack,
-  VStack,
+  /* VStack, */
   Link,
   Button,
   Heading,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { SiGithub, SiTwitter } from 'react-icons/si'
-import { FcGoogle } from 'react-icons/fc'
+/* import { SiGithub, SiTwitter } from 'react-icons/si'
+import { FcGoogle } from 'react-icons/fc' */
 
 import {
   setSessionToServer,
@@ -29,9 +29,9 @@ import { useAlertContext } from 'context/Alert'
 import { forgetPasword, dashboard } from 'constants/paths'
 import {
   EVENT_SIGN_IN,
-  isEnableGithubLogin,
+  /* isEnableGithubLogin,
   isEnableGoogleLogin,
-  isEnableTwitterLogin
+  isEnableTwitterLogin */
 } from 'constants/common'
 
 export interface IAuthFormProps {
@@ -188,13 +188,13 @@ export function AuthForm({ state }: IAuthFormProps) {
           fontWeight={700}
           fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
           lineHeight={'110%'}
-          color="gray.400"
+          color="gray.700"
         >
-          {isLogin ? 'Masuk ke akunmu' : 'Daftarkan akun baru'}
+          {isLogin ? 'Login' : 'Register'}
         </Heading>
       </Stack>
       <Box rounded={'lg'} bg={bgBox} boxShadow={'lg'} p={8}>
-        <VStack
+        {/* <VStack
           direction="row"
           align={'center'}
           justify={'center'}
@@ -240,7 +240,7 @@ export function AuthForm({ state }: IAuthFormProps) {
               {isLogin ? 'Masuk dengan Github' : 'Daftar dengan Github'}
             </Button>
           )}
-        </VStack>
+        </VStack> */}
 
         <Stack spacing={4} mt="4">
           <FormControl id="email" isRequired>
@@ -282,7 +282,7 @@ export function AuthForm({ state }: IAuthFormProps) {
                 align={'start'}
                 justify={'space-between'}
               >
-                <Button variant="link" as={Link} color={'gray.400'} href={forgetPasword}>
+                <Button variant="link" as={Link} color={'gray.700'} href={forgetPasword}>
                   Lupa password?
                 </Button>
               </Stack>
@@ -292,9 +292,9 @@ export function AuthForm({ state }: IAuthFormProps) {
               isLoading={loading}
               loadingText="Memproses"
               w="full"
-              bg="gray.400"
+              bg="gray.700"
               _hover={{
-                bg: 'gray.500'
+                bg: 'gray.800'
               }}
               color="white"
               onClick={handleSubmit}
@@ -306,7 +306,7 @@ export function AuthForm({ state }: IAuthFormProps) {
           {isLogin ? (
             <Stack direction="row" align={'center'} justify={'center'}>
               <Text>Belum punya akun? </Text>
-              <Button variant="link" as={Link} color={'gray.400'} onClick={toggleState}>
+              <Button variant="link" as={Link} color={'gray.700'} onClick={toggleState}>
                 Daftar sekarang
               </Button>
             </Stack>
