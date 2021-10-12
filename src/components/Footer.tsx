@@ -134,10 +134,10 @@ export function Footer(/* { withBacklink }: IFooterProps */) {
               <Link href='https://massabumi21.id/' textDecoration="underline">
                 Massa Bumi 2021
               </Link>{' '}
-              | Based on {' '}
+              | Powered by {' '}
               <Link
                 textDecoration="underline"
-                href={'https://ksana.in/'}
+                href={'https://ksana.in/gh'}
                 target="_blank"
                 rel="noopener noreferrer"
               >
